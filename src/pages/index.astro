@@ -1,16 +1,20 @@
 ---
-
+import { Image } from "astro:assets";
+import Katie from "../assets/image.jpg";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>Astro</h1>
+    <img src="/image.jpg" alt="Katie Haus" />
+    <p>Assets Image</p>
+    <Image format="avif" src={Katie} alt="Katie Haus" />
+  </body>
 </html>
