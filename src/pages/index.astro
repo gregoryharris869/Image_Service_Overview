@@ -12,9 +12,14 @@ import Katie from "../assets/image.jpg";
     <title>Astro</title>
   </head>
   <body>
-    <h1>Astro</h1>
-    <img src="/image.jpg" alt="Katie Haus" />
-    <p>Assets Image</p>
-    <Image format="avif" src={Katie} alt="Katie Haus" />
+    <Image
+      format="avif"
+      src={Katie}
+      alt="Katie Haus"
+      quality={"max"}
+      width={400}
+      height={400}
+      aria-hidden="true"
+    />
   </body>
 </html>
